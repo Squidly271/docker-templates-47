@@ -24,7 +24,7 @@
   <Support></Support>
   <Registry>https://hub.docker.com/r/dhovin/unraid_pritunl/</Registry>
   <GitHub>https://github.com/dhovin/unraid-pritunl</GitHub>
-  <Repository>dhovin/unraid-pritunl</Repository>
+  <Repository>dhovin/docker-pritunl</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Environment>
@@ -83,7 +83,7 @@
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"></Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/pritunl" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Banner></Banner>
-  <Icon>https://cdn.rawgit.com/dhovin/unraid-pritunl/0cf3b425/logo.png</Icon>
+  <Icon>https://cdn.rawgit.com/dhovin/docker-pritunl/0cf3b425/logo.png</Icon>
   <Beta>True</Beta>
   <Category>Network:Other Status:Beta</Category>
   <ExtraParams></ExtraParams>
