@@ -25,7 +25,7 @@
   <Support />
   <TemplateURL/>
   <CPUset/>
-  <Registry>https://hub.docker.com/r/dhovin/docker-pritunl/</Registry>
+  <Registry>https://registry.hub.docker.com/r/dhovin/docker-pritunl/</Registry>
   <GitHub>https://github.com/dhovin/docker-pritunl</GitHub>
   <Repository>dhovin/docker-pritunl</Repository>
   <BindTime>true</BindTime>
