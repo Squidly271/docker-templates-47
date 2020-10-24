@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
+<Container>
   <Name>Pritunl</Name>
   <Repository>dhovin/docker-pritunl</Repository>
   <Registry>https://registry.hub.docker.com/r/dhovin/docker-pritunl/</Registry>
@@ -9,7 +9,7 @@
   <Privileged>true</Privileged>
   <Support>http://lime-technology.com/forum/index.php?topic=48370.0</Support>
   <Project>https://pritunl.com/</Project>
-  <Overview>
+  <Overview>Docker container to run a Pritunl VPN Server.[br]
     Run a Pritunl VPN Server [br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where the default configs and logs are.[br][br]
@@ -19,16 +19,6 @@
     When you add a "server" and [b]set the bind port to 0.0.0.0`[/b], until UnRAID supports ipv6.[br]
     [br][br]
   </Overview>
-  <Description>Docker container to run a Pritunl VPN Server.[br]
-    Run a Pritunl VPN Server [br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where the default configs and logs are.[br][br]
-    Launch the Web Interface at port `9700` to manage Pritunl.[br]
-    Port `1194` udp/tcp is default for the VPN.[br]
-    Port '51820' udp is default for Wiregaurd.[br][br]
-    When you add a "server" and [b]set the bind port to 0.0.0.0`[/b], until UnRAID supports ipv6.[br]
-    [br][br]
-  </Description>
   <Category>Network:Other Status:Beta</Category>
   <Beta>True</Beta>
   <WebUI>https://[IP]:[PORT:9700]</WebUI>
@@ -55,7 +45,6 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-	    <Name>https</Name>
         <HostPort>9700</HostPort>
         <ContainerPort>443</ContainerPort>
         <Protocol>tcp</Protocol>
@@ -89,12 +78,4 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Config Name="http" Target="80" Default="9699" Mode="tcp" Description="Container Port: 80. Only used for LetsEncrypt." Type="Port" Display="advanced-hide" Required="false" Mask="false"></Config>
-  <Config Name="https" Target="443" Default="9700" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="VPN/tcp" Target="1194" Default="1194" Mode="tcp" Description="Container Port: 1194/tcp" Type="Port" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="VPN/udp" Target="1194" Default="1194" Mode="udp" Description="Container Port: 1194/udp" Type="Port" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Wiregaurd/udp" Target="51820" Default="51820" Mode="udp" Description="Container Port: 51820/udp" Type="Port" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"></Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"></Config>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/pritunl" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"></Config>
-</Containers>
+ </Container>
