@@ -23,8 +23,6 @@
    Docker container to run a Pritunl VPN Server. 
   </Description>
   <Support />
-  <TemplateURL/>
-  <CPUset/>
   <Registry>https://registry.hub.docker.com/r/dhovin/docker-pritunl/</Registry>
   <GitHub>https://github.com/dhovin/docker-pritunl</GitHub>
   <Repository>dhovin/docker-pritunl</Repository>

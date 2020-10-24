@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>test</Date>
+  <Beta>true</Beta>
+  <Category />
+  <Name>test template</Name>
+  <Project>https://pritunl.com/</Project>
+  <Changes />
+  <Overview>Test Test</Overview>
+  <Description>Test Test Test</Description>
+  <Registry>https://registry.hub.docker.com/r/dhovin/docker-pritunl/</Registry>
+  <GitHub>https://github.com/dhovin/docker-pritunl</GitHub>
+  <Repository>dhovin/docker-pritunl</Repository>
+  <Support></Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data />
+  <WebUI>https://[IP]:[PORT:9700]</WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/Dhovin/docker-pritunl/master/logo.png</Icon>
+</Containers>
