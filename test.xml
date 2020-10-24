@@ -1,26 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Date>test</Date>
-  <Beta>true</Beta>
-  <Category />
-  <Name>test template</Name>
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Pritunl</Name>
+  <Repository>bashninja/docker-pritunl</Repository>
+  <Registry>https://hub.docker.com/r/bashninja/docker-pritunl/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=48370.0</Support>
   <Project>https://pritunl.com/</Project>
-  <Changes />
-  <Overview>Test Test</Overview>
-  <Description>Test Test Test</Description>
-  <Registry>https://registry.hub.docker.com/r/dhovin/docker-pritunl/</Registry>
-  <GitHub>https://github.com/dhovin/docker-pritunl</GitHub>
-  <Repository>dhovin/docker-pritunl</Repository>
-  <Support></Support>
-  <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
-  <Networking>
-    <Mode>host</Mode>
-    <Publish/>
-  </Networking>
-  <Environment/>
-  <Data />
+  <Overview>
+    Run a Pritunl VPN Server [br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where the default configs and logs are.[br][br]
+    Launch the Web Interface at port `9700` to manage Pritunl.[br]
+    Port `1194` udp/tcp is default for the VPN.[br][br]
+    When you add a "server" and [b]set the bind port to 0.0.0.0`[/b], until UnRAID supports ipv6.[br]
+    [br][br]
+    Submit any UnRaid issues here: [url]http://lime-technology.com/forum/index.php?topic=48370.0[/url]
+  </Overview>
+  <Category>Network:Other Status:Beta</Category>
   <WebUI>https://[IP]:[PORT:9700]</WebUI>
-  <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/Dhovin/docker-pritunl/master/logo.png</Icon>
-</Containers>
+  <TemplateURL>https://raw.githubusercontent.com/miketweaver/docker-templates/master/bashninja/pritunl.xml</TemplateURL>
+  <Icon>https://cdn.rawgit.com/bashNinja-dockers/docker-pritunl/0cf3b425/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1578987603</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Run a Pritunl VPN Server</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9700</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>1194</HostPort>
+        <ContainerPort>1194</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>1194</HostPort>
+        <ContainerPort>1194</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9699</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Pritunl</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="https" Target="443" Default="9700" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="false" Mask="false">9700</Config>
+  <Config Name="VPN/tcp" Target="1194" Default="1194" Mode="tcp" Description="Container Port: 1194/tcp" Type="Port" Display="always" Required="false" Mask="false">1194</Config>
+  <Config Name="VPN/udp" Target="1194" Default="1194" Mode="udp" Description="Container Port: 1194/udp" Type="Port" Display="always" Required="false" Mask="false">1194</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/pritunl" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Pritunl</Config>
+  <Config Name="http" Target="80" Default="9699" Mode="tcp" Description="Container Port: 80. Only used for LetsEncrypt." Type="Port" Display="advanced-hide" Required="false" Mask="false">9699</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+</Container>

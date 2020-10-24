@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
+<Container>
   <Name>Pritunl</Name>
   <Repository>dhovin/docker-pritunl</Repository>
   <Registry>https://registry.hub.docker.com/r/dhovin/docker-pritunl/</Registry>
@@ -7,7 +7,7 @@
   <MyIP />
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
-  <Support />
+  <Support>http://lime-technology.com/forum/index.php?topic=48370.0</Support>
   <Project>https://pritunl.com/</Project>
   <Overview>
     Run a Pritunl VPN Server [br][br]
@@ -22,11 +22,7 @@
   <Description>
    Docker container to run a Pritunl VPN Server. 
   </Description>
-  <Changes>
-  [center][font size=4]Pritunl Change Log[/font][/center]
-  [b]10.23.2020:[/b] Initial Release. 
-  </Changes>
-    <Date>2020-10-23</Date>
+  <Category>Network:Other Status:Beta</Category>
   <WebUI>https://[IP]:[PORT:9700]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/docker-pritunl.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Dhovin/docker-pritunl/master/logo.png</Icon>
@@ -77,7 +73,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/Pritunl</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -90,4 +86,4 @@
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"></Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"></Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/pritunl" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"></Config>
-</Containers>
+</Container>
