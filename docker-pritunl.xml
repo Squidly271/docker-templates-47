@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Name>Pritunl VPN</Name>
+<Container>
+  <Name>Pritunl</Name>
   <Date>2020-10-23</Date>
   <Changes>
   [center][font size=4]Pritunl Change Log[/font][/center]
@@ -21,7 +21,9 @@
   <Description>
    Docker container to run a Pritunl VPN Server. 
   </Description>
-  <Support></Support>
+  <Support />
+  <TemplateURL/>
+  <CPUset/>
   <Registry>https://hub.docker.com/r/dhovin/docker-pritunl/</Registry>
   <GitHub>https://github.com/dhovin/docker-pritunl</GitHub>
   <Repository>dhovin/docker-pritunl</Repository>
@@ -88,4 +90,4 @@
   <Category>Network:Other Status:Beta</Category>
   <ExtraParams></ExtraParams>
   <BaseImage>lsiobase/focal</BaseImage>
-</Containers>
+</Container>
