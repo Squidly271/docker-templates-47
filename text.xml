@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
+  <Beta>True</Beta>
+  <Name>Test</Name>
+  <Date>2020-10-23</Date>
+  <Category>HomeAutomation:</Category>
+  <Privileged>false</Privileged>
+   <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
 </Container>
