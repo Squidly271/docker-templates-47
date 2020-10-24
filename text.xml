@@ -8,6 +8,9 @@
   <Repository>dhovin/docker-pritunl</Repository>
   <GitHub>https://github.com/dhovin/docker-pritunl</GitHub>
   <Registry>https://hub.docker.com/r/dhovin/docker-pritunl/</Registry>
+  <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/test.xml</TemplateURL>
+  <WebUI />
+  <Project />
   <Networking>
     <Mode>host</Mode>
     <Publish/>

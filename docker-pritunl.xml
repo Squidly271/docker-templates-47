@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Container>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/docker-pritunl.xml</TemplateURL>
   <Name>Pritunl</Name>
   <Date>2020-10-23</Date>
   <Changes>
@@ -90,4 +91,4 @@
   <Category>Network:Other Status:Beta</Category>
   <ExtraParams></ExtraParams>
   <BaseImage>lsiobase/focal</BaseImage>
-</Container>
+</Containers>
