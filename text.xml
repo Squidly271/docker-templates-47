@@ -5,7 +5,10 @@
   <Date>2020-10-23</Date>
   <Category>HomeAutomation:</Category>
   <Privileged>false</Privileged>
-   <Networking>
+  <Repository>dhovin/docker-pritunl</Repository>
+  <GitHub>https://github.com/dhovin/docker-pritunl</GitHub>
+  <Registry>https://hub.docker.com/r/dhovin/docker-pritunl/</Registry>
+  <Networking>
     <Mode>host</Mode>
     <Publish/>
   </Networking>
