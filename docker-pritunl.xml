@@ -19,8 +19,15 @@
     When you add a "server" and [b]set the bind port to 0.0.0.0`[/b], until UnRAID supports ipv6.[br]
     [br][br]
   </Overview>
-  <Description>
-   Docker container to run a Pritunl VPN Server. 
+  <Description>Docker container to run a Pritunl VPN Server.[br]
+    Run a Pritunl VPN Server [br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where the default configs and logs are.[br][br]
+    Launch the Web Interface at port `9700` to manage Pritunl.[br]
+    Port `1194` udp/tcp is default for the VPN.[br]
+    Port '51820' udp is default for Wiregaurd.[br][br]
+    When you add a "server" and [b]set the bind port to 0.0.0.0`[/b], until UnRAID supports ipv6.[br]
+    [br][br]
   </Description>
   <Category>Network:Other Status:Beta</Category>
   <Beta>True</Beta>
