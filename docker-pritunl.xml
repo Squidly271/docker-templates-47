@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/docker-pritunl.xml</TemplateURL>
   <Name>Pritunl</Name>
-  <Date>2020-10-23</Date>
-  <Changes>
-  [center][font size=4]Pritunl Change Log[/font][/center]
-  [b]10.23.2020:[/b] Initial Release. 
-  </Changes>
-  <WebUI>https://[IP]:[PORT:9700]</WebUI>
+  <Repository>dhovin/docker-pritunl</Repository>
+  <Registry>https://registry.hub.docker.com/r/dhovin/docker-pritunl/</Registry>
+  <Network>bridge</Network>
+  <MyIP />
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support />
   <Project>https://pritunl.com/</Project>
   <Overview>
     Run a Pritunl VPN Server [br][br]
@@ -22,12 +22,19 @@
   <Description>
    Docker container to run a Pritunl VPN Server. 
   </Description>
-  <Support />
-  <Registry>https://registry.hub.docker.com/r/dhovin/docker-pritunl/</Registry>
-  <GitHub>https://github.com/dhovin/docker-pritunl</GitHub>
-  <Repository>dhovin/docker-pritunl</Repository>
-  <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
+  <Changes>
+  [center][font size=4]Pritunl Change Log[/font][/center]
+  [b]10.23.2020:[/b] Initial Release. 
+  </Changes>
+    <Date>2020-10-23</Date>
+  <WebUI>https://[IP]:[PORT:9700]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/docker-pritunl.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Dhovin/docker-pritunl/master/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
   <Environment>
     <Variable>
       <Name>PUID</Name>
@@ -83,10 +90,4 @@
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"></Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false"></Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/pritunl" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/Dhovin/docker-pritunl/master/logo.png</Icon>
-  <Beta>True</Beta>
-  <Category>Network:Other Status:Beta</Category>
-  <ExtraParams></ExtraParams>
-  <BaseImage>lsiobase/focal</BaseImage>
 </Containers>
