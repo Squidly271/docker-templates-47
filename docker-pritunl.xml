@@ -22,8 +22,8 @@
    Docker container to run a Pritunl VPN Server. 
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/dhovin/unraid_pritunl/</Registry>
-  <GitHub>https://github.com/dhovin/unraid-pritunl</GitHub>
+  <Registry>https://hub.docker.com/r/dhovin/docker-pritunl/</Registry>
+  <GitHub>https://github.com/dhovin/docker-pritunl</GitHub>
   <Repository>dhovin/docker-pritunl</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
@@ -87,5 +87,5 @@
   <Beta>True</Beta>
   <Category>Network:Other Status:Beta</Category>
   <ExtraParams></ExtraParams>
-  <BaseImage>lsiobase/xenial</BaseImage>
+  <BaseImage>lsiobase/focal</BaseImage>
 </Containers>
