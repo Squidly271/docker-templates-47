@@ -7,7 +7,7 @@
   <MyIP />
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
-  <Support>http://lime-technology.com/forum/index.php?topic=48370.0</Support>
+  <Support></Support>
   <Project>https://pritunl.com/</Project>
   <Overview>Docker container to run a Pritunl VPN Server.[br]&#xD;
 Run a Pritunl VPN Server [br]&#xD;
