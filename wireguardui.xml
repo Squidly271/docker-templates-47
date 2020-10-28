@@ -31,21 +31,6 @@
       <Port>
         <HostPort>5555</HostPort>
         <ContainerPort>5555</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>1194</HostPort>
-        <ContainerPort>1194</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>1194</HostPort>
-        <ContainerPort>1194</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>51820</HostPort>
-        <ContainerPort>51820</ContainerPort>
         <Protocol>udp</Protocol>
       </Port>
     </Publish>
