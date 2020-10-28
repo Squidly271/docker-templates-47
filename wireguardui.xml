@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
   <Support></Support>
-  <Project>https://pritunl.com/</Project>
+  <Project>https://github.com/EmbarkStudios/wg-ui</Project>
   <Overview>Wireguard UI</Overview>
   <Category>Network:VPN Status:Beta</Category>
   <WebUI>https://[IP]:[PORT:8080]</WebUI>
@@ -37,8 +37,8 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/Pritunl</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir>/mnt/user/appdata/wireguardui</HostDir>
+      <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
