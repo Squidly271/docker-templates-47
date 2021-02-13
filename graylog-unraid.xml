@@ -54,10 +54,16 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/Pritunl</HostDir>
+      <HostDir>/mnt/user/appdata/greylog</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
     <Labels/>
+  <Config Name="HTTP" Target="9000" Default="9000" Mode="tcp" Description="Container Port: 9000" Type="Port" Display="always" Required="true" Mask="false">9000</Config>
+  <Config Name="Port 1" Target="12201" Default="12201" Mode="udp" Description="Container Port: 12201" Type="Port" Display="always" Required="true" Mask="false">12201</Config>
+  <Config Name="Port 2" Target="1514" Default="1514" Mode="tcp" Description="Container Port: 1514" Type="Port" Display="always" Required="true" Mask="false">1514</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/Pritunl" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/graylog</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
  </Container>
