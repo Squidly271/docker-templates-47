@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Graylog</Name>
+  <Repository>dhovin/graylog-unraid</Repository>
+  <Registry>https://hub.docker.com/r/graylog/graylog</Registry>
+  <Network>bridge</Network>
+  <MyIP />
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project></Project>
+  <Overview>Graylog 4.0 server</Overview>
+  <Category>Network:Other Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:9000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/graylog-unraid.xml</TemplateURL>
+  <Icon></Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Graylog 4.0 server</Description>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9000</HostPort>
+        <ContainerPort>9000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>12201</HostPort>
+        <ContainerPort>12201</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>1514</HostPort>
+        <ContainerPort>1514</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Pritunl</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+    <Labels/>
+  <Config Name="HTTPS" Target="443" Default="9700" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">9700</Config>
+  <Config Name="HTTP" Target="80" Default="9699" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">9699</Config>
+  <Config Name="OpenVPN/udp" Target="1194" Default="1194" Mode="udp" Description="Container Port: 1194" Type="Port" Display="always" Required="true" Mask="false">1194</Config>
+  <Config Name="OpenVPN/tcp" Target="1194" Default="1194" Mode="tcp" Description="Container Port: 1194" Type="Port" Display="always" Required="true" Mask="false">1194</Config>
+  <Config Name="Wiregaurd" Target="51820" Default="51820" Mode="udp" Description="Container Port: 51820" Type="Port" Display="always" Required="true" Mask="false">51820</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/Pritunl" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/Pritunl</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+ </Container>
