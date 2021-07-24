@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Pi-hole and Unbound</Name>
+  <Repository>dhovin/unraid-pihole-unbound</Repository>
+  <Registry>https://registry.hub.docker.com/r/dhovin/unraid_pihole_unbound/Registry>
+  <Network>bridge</Network>
+  <MyIP />
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support></Support>
+  <Project>https://pihole.com/</Project>
+  <Overview>Docker containing PiHole and Unbound</Overview>
+  <Category>Network:Other Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/unraid_pihole_unbound.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Dhovin/docker-pritunl/master/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Docker container to run a pihole and unbound.</Description>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Pritunl</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+    <Labels/>
+ </Container>
