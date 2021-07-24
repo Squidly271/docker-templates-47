@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Pi-hole and Unbound</Name>
+  <Name>Pihole and Unbound</Name>
   <Repository>dhovin/unraid-pihole-unbound</Repository>
   <Registry>https://registry.hub.docker.com/r/dhovin/unraid_pihole_unbound/</Registry>
   <Network>bridge</Network>
@@ -20,18 +20,7 @@
   <DonateText/>
   <DonateLink/>
   <Description>Docker container to run a pihole and unbound.</Description>
-  <Environment>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-      <Mode/>
-    </Variable>
-  </Environment>
+  <Environment />
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -50,4 +39,5 @@
     </Volume>
   </Data>
     <Labels/>
+  <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
  </Container>
