@@ -5,7 +5,7 @@
   <Registry>https://registry.hub.docker.com/r/dhovin/unraid_pihole_unbound/</Registry>
   <Network>bridge</Network>
   <MyIP />
-  <Shell>sh</Shell>
+  <Shell>bash</Shell>
   <Privileged>true</Privileged>
   <Support></Support>
   <Project>https://pihole.com/</Project>
