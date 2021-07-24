@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Pihole and Unbound</Name>
-  <Repository>dhovin/unraid-pihole-unbound</Repository>
+  <Name>Pihole-Unbound</Name>
+  <Repository>dhovin/unraid_pihole_unbound</Repository>
   <Registry>https://registry.hub.docker.com/r/dhovin/unraid_pihole_unbound/</Registry>
   <Network>bridge</Network>
   <MyIP />
@@ -43,13 +43,13 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/Pritunl</HostDir>
+      <HostDir>/mnt/user/appdata/pihole-unbound</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
     <Labels/>
-  <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Pihole Web Admin" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
   <Config Name="DNS TCP" Target="53" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
   <Config Name="DNS UDP" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
  </Container>
