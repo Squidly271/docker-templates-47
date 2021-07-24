@@ -29,6 +29,16 @@
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+	  <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+	  <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Data>
@@ -40,4 +50,6 @@
   </Data>
     <Labels/>
   <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="DNS TCP" Target="53" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+  <Config Name="DNS UDP" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
  </Container>
