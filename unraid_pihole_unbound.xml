@@ -14,7 +14,7 @@
   <WebUI>http://[IP]:[PORT:80]/admin/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/unraid_pihole_unbound.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Dhovin/docker-pritunl/master/logo.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped --hostname=pihole</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DonateText/>
