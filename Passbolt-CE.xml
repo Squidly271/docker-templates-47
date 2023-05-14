@@ -29,7 +29,7 @@ NOTES&#xD;
 &#x2022; You have many other variables to use on this template if you need them. Check the GitHub repo to know more.&#xD;
 &#xD;
 VERSION&#xD;
-1.0 (2022-02-03)</Overview>
+1.1 (2023-05-14)</Overview>
   <Category>Productivity: Security: Tools:</Category>
   <WebUI>https://[IP]:[PORT:443]</WebUI>
   <TemplateURL/>
@@ -41,7 +41,8 @@ VERSION&#xD;
   <DonateText/>
   <DonateLink/>
   <Requires>Database (MariaDB, MySQL)</Requires>
-  <Config Name="WebUI" Target="443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7080</Config>
+  <Config Name="WebUI" Target="443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7443</Config>
   <Config Name="DATASOURCES_DEFAULT_HOST" Target="DATASOURCES_DEFAULT_HOST" Default="" Mode="" Description="This is the database host ip." Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DATASOURCES_DEFAULT_PORT" Target="DATASOURCES_DEFAULT_PORT" Default="" Mode="" Description="This is the database port." Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DATASOURCES_DEFAULT_DATABASE" Target="DATASOURCES_DEFAULT_DATABASE" Default="" Mode="" Description="This is the database name." Type="Variable" Display="always" Required="true" Mask="false"/>
