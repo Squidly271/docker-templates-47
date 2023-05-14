@@ -1,5 +1,5 @@
 # docker-templates
 
- * Pi-Hole
- * Pritunl
+ * Pi-Hole & Unbound DNS filtering
+ * Pritunl VPN
  * Passbolt-CE (updated from Smartphonelover template)
