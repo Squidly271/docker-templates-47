@@ -33,7 +33,7 @@ VERSION&#xD;
   <Category>Productivity: Security: Tools:</Category>
   <WebUI>https://[IP]:[PORT:443]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/passbolt.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Dhovin/docker-templates/master/templates/icons/passbolt.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

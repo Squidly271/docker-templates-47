@@ -13,7 +13,7 @@
   <Category>Network:Other Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:80]/admin/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/unraid_pihole_unbound.xml</TemplateURL>
-  <Icon>https://github.com/Dhovin/docker-templates/blob/master/templates/icons/pihole.png?raw=true</Icon>
+  <Icon>hhttps://raw.githubusercontent.com/Dhovin/docker-templates/master/templates/icons/pihole.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped --hostname=pihole</ExtraParams>
   <PostArgs/>
   <CPUset/>
