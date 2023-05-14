@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maintainer>
-  <Icon></Icon>
+  <Icon>https://raw.githubusercontent.com/Dhovin/docker-templates/master/templates/icons/profile.jpg</Icon>
   <Profile>Just a tinkerer.</Profile>
   <DonateLink></DonateLink>
   <DonateText></DonateText>
