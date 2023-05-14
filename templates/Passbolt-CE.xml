@@ -31,7 +31,7 @@ NOTES&#xD;
 VERSION&#xD;
 1.1 (2023-05-14)</Overview>
   <Category>Productivity: Security: Tools:</Category>
-  <WebUI>https://[IP]:[PORT:443]</WebUI>
+  <WebUI>https://[IP]:[PORT:7443]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Dhovin/docker-templates/master/templates/icons/passbolt.png</Icon>
   <ExtraParams/>
@@ -48,9 +48,13 @@ VERSION&#xD;
   <Config Name="Database Name" Target="DATASOURCES_DEFAULT_DATABASE" Default="" Mode="" Description="This is the database name." Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DATASOURCES_DEFAULT_USERNAME" Target="DATASOURCES_DEFAULT_USERNAME" Default="" Mode="" Description="This is the database username." Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DATASOURCES_DEFAULT_PASSWORD" Target="DATASOURCES_DEFAULT_PASSWORD" Default="" Mode="" Description="This is the database password." Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Storage (data) [1]" Target="/etc/passbolt/gpg" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/passbolt-ce/gpg/</Config>
-  <Config Name="Storage (data) [2]" Target="/etc/passbolt/jwt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/passbolt-ce/jwt/</Config>
+  <Config Name="Storage (data) [1]" Target="/etc/passbolt/gpg/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/passbolt-ce/gpg/</Config>
+  <Config Name="Storage (data) [2]" Target="/etc/passbolt/jwt/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/passbolt-ce/jwt/</Config>
   <Config Name="APP_FULL_BASE_URL" Target="APP_FULL_BASE_URL" Default="" Mode="" Description="This is the base URL used when creating new user on first launch (terminal). Make sure it matches with your container (ip and port)." Type="Variable" Display="always" Required="true" Mask="false">https://HOST_IP:PORT</Config>
-  <Config Name="Email Transport Class" Target="EMAIL_TRANSPORT_DEFAULT_CLASS_NAME" Default="SMTP" Mode="" Description="" Type="Variable" Display="hidden" Required="false" Mask="false"/>
-  <Config Name="Email From Address" Target="EMAIL_DEFAULT_FROM" Default="SMTP" Mode="" Description="" Type="Variable" Display="hidden" Required="false" Mask="false"/>
+  <Config Name="Email Transport Class" Target="EMAIL_TRANSPORT_DEFAULT_CLASS_NAME" Default="SMTP" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="Email From Address" Target="EMAIL_DEFAULT_FROM" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="Email Provider Hostname" Target="EMAIL_TRANSPORT_DEFAULT_HOST" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="Email Server Port" Target="EMAIL_TRANSPORT_DEFAULT_PORT" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="Email Provider Username" Target="EMAIL_TRANSPORT_DEFAULT_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="Email Provider Password" Target="EMAIL_TRANSPORT_DEFAULT_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
 </Container>
