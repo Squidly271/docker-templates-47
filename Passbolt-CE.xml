@@ -51,4 +51,5 @@ VERSION&#xD;
   <Config Name="Storage (data) [1]" Target="/etc/passbolt/gpg" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/passbolt-ce/gpg/</Config>
   <Config Name="Storage (data) [2]" Target="/etc/passbolt/jwt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/passbolt-ce/jwt/</Config>
   <Config Name="APP_FULL_BASE_URL" Target="APP_FULL_BASE_URL" Default="" Mode="" Description="This is the base URL used when creating new user on first launch (terminal). Make sure it matches with your container (ip and port)." Type="Variable" Display="always" Required="true" Mask="false">https://HOST_IP:PORT</Config>
+  <Config Name="DATASOURCES_DEFAULT_PASSWORD" Target="DATASOURCES_DEFAULT_PASSWORD" Default="" Mode="" Description="This is the database password." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
