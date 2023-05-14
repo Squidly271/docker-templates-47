@@ -1,6 +1,6 @@
 # docker-templates
 
-## Pi-Hole
-## Pritunl
+### Pi-Hole
+### Pritunl
 
-## Passbolt-CE (updated from Smartphonelover template)
+### Passbolt-CE (updated from Smartphonelover template)
