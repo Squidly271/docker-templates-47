@@ -7,7 +7,7 @@
   <MyIP />
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
-  <Support></Support>
+  <Support>https://github.com/Dhovin/docker-pritunl/issues</Support>
   <Project>https://pritunl.com/</Project>
   <Overview>Docker container to run a Pritunl VPN Server.[br]&#xD;
 Run a Pritunl VPN Server [br]&#xD;
@@ -17,7 +17,7 @@ Launch the Web Interface at port `9700` to manage Pritunl.[br]&#xD;
 Port `1194` udp/tcp is default for the VPN.[br]&#xD;
 Port '51820' udp is default for Wiregaurd.[br]&#xD;
 When you add a "server" and [b]set the bind port to 0.0.0.0`[/b], until UnRAID supports ipv6.[br]</Overview>
-  <Category>Network:Other Status:Beta</Category>
+  <Category>Network:VPN</Category>
   <WebUI>https://[IP]:[PORT:9700]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/docker-pritunl.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Dhovin/docker-templates/master/templates/icons/pritunl.png</Icon>

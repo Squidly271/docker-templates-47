@@ -7,10 +7,10 @@
   <MyIP />
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
-  <Support></Support>
+  <Support>https://github.com/Dhovin/pihole-unbound/issues</Support>
   <Project>https://pihole.com/</Project>
   <Overview>Docker containing PiHole and Unbound</Overview>
-  <Category>Network:Other Status:Beta</Category>
+  <Category>Network:DNS</Category>
   <WebUI>http://[IP]:[PORT:80]/admin/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/unraid_pihole_unbound.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Dhovin/docker-templates/master/templates/icons/pihole.png</Icon>
