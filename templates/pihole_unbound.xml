@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Pihole-Unbound</Name>
   <Repository>dhovin/pihole_unbound</Repository>
-  <Registry>https://registry.hub.docker.com/r/dhovin/unraid_pihole_unbound/</Registry>
+  <Registry>https://registry.hub.docker.com/r/dhovin/pihole_unbound/</Registry>
   <Network>bridge</Network>
   <MyIP />
   <Shell>bash</Shell>
