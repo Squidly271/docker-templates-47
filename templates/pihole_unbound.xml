@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Pihole-Unbound</Name>
-  <Repository>dhovin/unraid_pihole_unbound</Repository>
+  <Repository>dhovin/pihole_unbound</Repository>
   <Registry>https://registry.hub.docker.com/r/dhovin/unraid_pihole_unbound/</Registry>
   <Network>bridge</Network>
   <MyIP />
@@ -12,7 +12,7 @@
   <Overview>Docker containing PiHole and Unbound</Overview>
   <Category>Network:DNS</Category>
   <WebUI>http://[IP]:[PORT:8053]/admin/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/unraid_pihole_unbound.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/pihole_unbound.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Dhovin/docker-templates/master/templates/icons/pihole.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped --hostname=pihole</ExtraParams>
   <PostArgs/>
