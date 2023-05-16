@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP />
   <Shell>bash</Shell>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Support>https://github.com/Dhovin/pihole-unbound/issues</Support>
   <Project>https://pihole.com/</Project>
   <Overview>Docker containing PiHole and Unbound</Overview>

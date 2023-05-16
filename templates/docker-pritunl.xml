@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP />
   <Shell>sh</Shell>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Support>https://github.com/Dhovin/docker-pritunl/issues</Support>
   <Project>https://pritunl.com/</Project>
   <Overview>Docker container to run a Pritunl VPN Server.[br]&#xD;
