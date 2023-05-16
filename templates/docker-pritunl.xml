@@ -6,11 +6,12 @@
   <Network>bridge</Network>
   <MyIP />
   <Shell>sh</Shell>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Support>https://github.com/Dhovin/docker-pritunl/issues</Support>
   <Project>https://pritunl.com/</Project>
   <Overview>Docker container to run a Pritunl VPN Server.[br]&#xD;
 Run a Pritunl VPN Server [br]&#xD;
+Privileged mode is needed for routing to work properly.[br]&#xD;
 [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
 [b]/config[/b] This is where the default configs and logs are.[br]&#xD;
 Launch the Web Interface at port `9700` to manage Pritunl.[br]&#xD;
