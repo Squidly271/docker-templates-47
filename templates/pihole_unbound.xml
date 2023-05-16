@@ -10,7 +10,7 @@
   <Support>https://github.com/Dhovin/pihole-unbound/issues</Support>
   <Project>https://pihole.com/</Project>
   <Overview>Docker containing PiHole and Unbound</Overview>
-  <Category>Network:DNS</Category>
+  <Category>Network:DNS Status:beta</Category>
   <WebUI>http://[IP]:[PORT:8053]/admin/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/pihole_unbound.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Dhovin/docker-templates/master/templates/icons/pihole.png</Icon>
