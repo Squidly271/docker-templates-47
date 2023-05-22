@@ -19,7 +19,7 @@ Port `1194` udp/tcp is default for the VPN.[br]&#xD;
 Port '51820' udp is default for Wiregaurd.[br]&#xD;
 When you add a "server" and [b]set the bind port to 0.0.0.0`[/b], until UnRAID supports ipv6.[br]</Overview>
   <Category>Network:VPN</Category>
-  <WebUI>https://[IP]:[PORT:9700]</WebUI>
+  <WebUI>https://[IP]:[PORT:443]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Dhovin/docker-templates/main/docker-pritunl.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Dhovin/docker-templates/master/templates/icons/pritunl.png</Icon>
   <ExtraParams/>
